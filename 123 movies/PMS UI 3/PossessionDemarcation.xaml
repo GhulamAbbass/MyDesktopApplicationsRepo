@@ -1,0 +1,71 @@
+﻿<Window x:Class="PMS_UI_3.PossessionDemarcation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PMS_UI_3"
+        mc:Ignorable="d"
+        Title="Plot Management System" Height="552.294" Width="888.579">
+    <Grid Margin="0,-20,0,5">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="39" Margin="29,53,0,0" Stroke="Black" VerticalAlignment="Top" Width="288"/>
+        <Label Content="Possession Demarcation" HorizontalAlignment="Left" Margin="64,55,0,0" VerticalAlignment="Top" Height="37" Width="219" Foreground="#FF0935CD" FontWeight="Bold" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="117,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"  />
+        <Label Content="Possession No." HorizontalAlignment="Left" Margin="22,119,0,0" VerticalAlignment="Top" Height="26" Width="90"/>
+        <Button Content="....." HorizontalAlignment="Left" Margin="252,122,0,0" VerticalAlignment="Top" Width="59" Height="23"/>
+        <Label Content="Possession Date:" HorizontalAlignment="Left" Margin="343,110,0,0" VerticalAlignment="Top" Height="26" Width="99"/>
+        <DatePicker HorizontalAlignment="Left" Margin="447,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Demarcation Date:" HorizontalAlignment="Left" Margin="334,151,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+        <DatePicker HorizontalAlignment="Left" Margin="447,153,0,0" VerticalAlignment="Top"/>
+        <Label Content="Possession Time:" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Height="26" Width="105"/>
+        <DatePicker HorizontalAlignment="Left" Margin="756,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Demarcation Time:" HorizontalAlignment="Left" Margin="621,150,0,0" VerticalAlignment="Top" Height="26" Width="115"/>
+        <DatePicker HorizontalAlignment="Left" Margin="756,150,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="117,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" />
+        <Label Content="Plot No." HorizontalAlignment="Left" Margin="60,156,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="74" Margin="25,193,0,0" Stroke="Black" VerticalAlignment="Top" Width="836"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="46" Margin="42,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="486"/>
+        <Label Content="Plot Type." HorizontalAlignment="Left" Margin="50,213,0,0" VerticalAlignment="Top" Height="27" Width="61"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="111,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Kanal." HorizontalAlignment="Left" Margin="182,214,0,0" VerticalAlignment="Top" Height="27" Width="41"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="224,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Marla." HorizontalAlignment="Left" Margin="293,215,0,0" VerticalAlignment="Top" Height="27" Width="43"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="335,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Sqft." HorizontalAlignment="Left" Margin="409,215,0,0" VerticalAlignment="Top" Height="27" Width="33"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="450,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" Margin="533,204,0,0" Stroke="Black" VerticalAlignment="Top" Width="313"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="539,211,0,0" VerticalAlignment="Top" Height="27" Width="61"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="583,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129"  />
+        <Label Content="Rank" HorizontalAlignment="Left" Margin="717,211,0,0" VerticalAlignment="Top" Height="27" Width="41"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="763,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="83" Margin="25,276,0,0" Stroke="Black" VerticalAlignment="Top" Width="438"/>
+        <Label Content="Longer Demensions:" HorizontalAlignment="Left" Margin="41,299,0,0" VerticalAlignment="Top" Height="27" Width="117"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="158,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="158,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <Label Content="Longer Demensions:" HorizontalAlignment="Left" Margin="250,288,0,0" VerticalAlignment="Top" Height="26" Width="118"/>
+        <Label Content="Longer Demensions:" HorizontalAlignment="Left" Margin="249,318,0,0" VerticalAlignment="Top" Height="26" Width="118"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="373,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="373,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="83" Margin="26,368,0,0" Stroke="Black" VerticalAlignment="Top" Width="438"/>
+        <Label Content="Shorter Demensions:" HorizontalAlignment="Left" Margin="42,398,0,0" VerticalAlignment="Top" Height="27" Width="119"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="159,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="159,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82" />
+        <Label Content="Longer Demensions:" HorizontalAlignment="Left" Margin="251,412,0,0" VerticalAlignment="Top" Height="26" Width="118"/>
+        <Label Content="Longer Demensions:" HorizontalAlignment="Left" Margin="251,380,0,0" VerticalAlignment="Top" Height="26" Width="118"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="374,382,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="374,416,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" />
+        <Label Content="All the fields with    are compulsory." HorizontalAlignment="Left" Margin="27,476,0,0" VerticalAlignment="Top" Height="27" Width="273" FontWeight="Bold" FontSize="14"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="144,474,0,0" VerticalAlignment="Top" Height="26" Width="26" FontSize="24" Foreground="#FFD60707" RenderTransformOrigin="-1.766,0.086"/>
+        <Label Content="Area of Plot:" HorizontalAlignment="Left" Margin="533,293,0,0" VerticalAlignment="Top" Height="26" Width="97"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="639,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="119"  />
+        <Label Content="Excess/Shortby:" HorizontalAlignment="Left" Margin="519,352,0,0" VerticalAlignment="Top" Height="42" Width="132"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="639,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="119" />
+        <Label Content="Sqft" HorizontalAlignment="Left" Margin="770,293,0,0" VerticalAlignment="Top" Height="30" Width="47"/>
+        <Label Content="Sqft" HorizontalAlignment="Left" Margin="773,352,0,0" VerticalAlignment="Top" Height="42" Width="52"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="759,289,0,0" VerticalAlignment="Top" Height="35" Width="20" FontSize="24" Foreground="#FFD60707" RenderTransformOrigin="-1.766,0.086"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="515,460,0,0" VerticalAlignment="Top" Width="80" Height="40" Background="#FFD34444" Foreground="#FFEAEAEA" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="601,460,0,0" VerticalAlignment="Top" Width="80" Height="40" Background="#FF5ED34B" Foreground="#FFEAEAEA" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="687,460,0,0" VerticalAlignment="Top" Width="79" Height="40" Background="#FF286C1D" Foreground="#FFEAEAEA" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="772,460,0,0" VerticalAlignment="Top" Width="74" Height="40" Background="#FFDAA739" Foreground="#FFEAEAEA" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

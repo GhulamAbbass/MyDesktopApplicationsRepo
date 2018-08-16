@@ -1,0 +1,49 @@
+﻿<Window x:Class="Plot_Management_System.LetterPrinting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PMS_UI_3"
+        mc:Ignorable="d"
+        Title="LetterPrinting" Height="592.182" Width="651.729">
+    <Grid Margin="0,0,16,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="39" Margin="185,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Letter Printing" HorizontalAlignment="Left" Margin="238,33,0,0" VerticalAlignment="Top" Height="37" Width="174" Foreground="#FF0935CD" FontWeight="Bold" FontSize="18"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="184" Margin="27,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="593"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="94,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" />
+        <Label Content="Plot No." HorizontalAlignment="Left" Margin="41,96,0,0" VerticalAlignment="Top" Height="26" Width="53"/>
+        <Button Content="....." HorizontalAlignment="Left" Margin="228,99,0,0" VerticalAlignment="Top" Width="59" Height="23"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="46" Margin="46,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="486"/>
+        <Label Content="Plot Type." HorizontalAlignment="Left" Margin="54,138,0,0" VerticalAlignment="Top" Height="27" Width="61"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="115,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Kanal." HorizontalAlignment="Left" Margin="186,139,0,0" VerticalAlignment="Top" Height="27" Width="41"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="228,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59"  />
+        <Label Content="Marla." HorizontalAlignment="Left" Margin="297,140,0,0" VerticalAlignment="Top" Height="27" Width="43"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="339,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Sqft." HorizontalAlignment="Left" Margin="413,140,0,0" VerticalAlignment="Top" Height="27" Width="33"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="454,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" />
+        <Label Content="Membership No:" HorizontalAlignment="Left" Margin="41,188,0,0" VerticalAlignment="Top" Height="27" Width="106"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.689,0.405" />
+        <Label Content="Membership Type:" HorizontalAlignment="Left" Margin="299,188,0,0" VerticalAlignment="Top" Height="27" Width="106"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="410,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.689,0.405" />
+        <Label Content="Membership Name:" HorizontalAlignment="Left" Margin="41,228,0,0" VerticalAlignment="Top" Height="27" Width="127"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" RenderTransformOrigin="0.689,0.405" />
+        <GroupBox Header="Final Notice" HorizontalAlignment="Left" Height="66" Margin="26,270,0,0" VerticalAlignment="Top" Width="528"/>
+        <Label Content="Letter Date:" HorizontalAlignment="Left" Margin="34,293,0,0" VerticalAlignment="Top" Height="27" Width="78"/>
+        <Label Content="Due Date:" HorizontalAlignment="Left" Margin="238,293,0,0" VerticalAlignment="Top" Height="27" Width="88"/>
+        <DatePicker HorizontalAlignment="Left" Margin="105,296,0,0" VerticalAlignment="Top" Width="104"/>
+        <DatePicker HorizontalAlignment="Left" Margin="303,296,0,0" VerticalAlignment="Top" Width="104"/>
+        <Button Content="Final Notice" HorizontalAlignment="Left" Margin="448,294,0,0" VerticalAlignment="Top" Width="94" Height="26" Background="#FFEEDC70" FontSize="14" />
+        <DataGrid HorizontalAlignment="Left" Height="176" Margin="27,341,0,0" VerticalAlignment="Top" Width="371"/>
+        <CheckBox Content="Revised" HorizontalAlignment="Left" Margin="410,341,0,0" VerticalAlignment="Top" FontSize="14"  />
+        <Button Content="Drawing Approval" HorizontalAlignment="Left" Margin="507,344,0,0" VerticalAlignment="Top" Width="113" Height="35" Background="#FF3D4232" FontSize="13" Foreground="#FFF5EBEB" />
+        <Button Content="Const. Violation" HorizontalAlignment="Left" Margin="507,384,0,0" VerticalAlignment="Top" Width="113" Height="39" Background="#FF2E6E93" FontSize="13" Foreground="#FFF5EBEB" />
+        <Button Content="Comp Create Prev" HorizontalAlignment="Left" Margin="507,428,0,0" VerticalAlignment="Top" Width="113" Height="40" Background="#FF647393" FontSize="13" Foreground="#FFF5EBEB" />
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="430,483,0,0" VerticalAlignment="Top" Width="84" Height="34" Background="#FFE04A33" Foreground="#FFF1EFEF" FontSize="15" />
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="519,483,0,0" VerticalAlignment="Top" Width="86" Height="34" Background="#FFE0D723" FontSize="15" />
+
+    </Grid>
+</Window>
