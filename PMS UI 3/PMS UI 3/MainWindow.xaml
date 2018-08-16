@@ -1,0 +1,23 @@
+﻿<Window x:Class="PMS_UI_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PMS_UI_3"
+        mc:Ignorable="d"
+        Title="Plot Management System" Height="555.749" Width="467.503">
+    <Grid>
+        <Button x:Name="btn1" Content="Demarcation Entry" HorizontalAlignment="Left" Margin="44,46,0,0" VerticalAlignment="Top" Width="143" Height="46" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="Letter Printing" HorizontalAlignment="Left" Margin="277,46,0,0" VerticalAlignment="Top" Width="135" Height="46" Click="btn2_Click" />
+        <Button x:Name="btn3" Content="Possession Demarcation" HorizontalAlignment="Left" Margin="44,112,0,0" VerticalAlignment="Top" Width="143" Height="46" Click="btn3_Click"/>
+        <Button Content="Possession of Plot" HorizontalAlignment="Left" Margin="277,112,0,0" VerticalAlignment="Top" Width="135" Height="46" Click="Button_Click"/>
+        <Button Content="Site Plan Query" HorizontalAlignment="Left" Margin="44,178,0,0" VerticalAlignment="Top" Width="143" Height="46" Click="Button_Click_1"/>
+        <Button Content="Possession of Plot 2" HorizontalAlignment="Left" Margin="277,178,0,0" VerticalAlignment="Top" Width="135" Height="46" Click="Button_Click_2"/>
+        <Button Content="Site Plan Issue" HorizontalAlignment="Left" Margin="44,242,0,0" VerticalAlignment="Top" Width="143" Height="40" Click="Button_Click_3"/>
+        <Button Content="Print of Site Plan" HorizontalAlignment="Left" Margin="277,242,0,0" VerticalAlignment="Top" Width="135" Height="40" Click="Button_Click_4"/>
+        <Button x:Name="btn8" Content="Ownership Description" HorizontalAlignment="Left" Margin="44,301,0,0"  VerticalAlignment="Top" Width="143" Height="40" Click="btn8_Click"/>
+        <Button x:Name="btn10" Content="Relation Description" HorizontalAlignment="Left" Margin="277,301,0,0" VerticalAlignment="Top" Width="135" Height="40" Click="btn10_Click" />
+        <Button x:Name="btn11" Content="Print Report" HorizontalAlignment="Left" Margin="44,379,0,0"  VerticalAlignment="Top" Width="143" Height="40" Click="btn11_Click" />
+        <Button x:Name="btn12" Content="Upload Image" HorizontalAlignment="Left" Margin="277,379,0,0"  VerticalAlignment="Top" Width="143" Height="40" Click="btn12_Click"  />
+    </Grid>
+</Window>

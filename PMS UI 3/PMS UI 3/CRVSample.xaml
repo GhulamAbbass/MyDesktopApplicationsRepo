@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PMS_UI_3"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="PMS_UI_3.CRVSample"
+        mc:Ignorable="d"
+        Title="CRVSample" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="563*"/>
+        </Grid.RowDefinitions>
+        <Viewer:CrystalReportsViewer x:Name="sampleCRV" HorizontalAlignment="Left" Height="485" VerticalAlignment="Top" Width="992" Margin="0,78,0,0" Grid.Row="2"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="61" Margin="47,3,0,0" Stroke="Black" VerticalAlignment="Top" Width="898" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.16"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="btnPrintReport" Content="Print Sample Report" HorizontalAlignment="Left" Margin="426,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="207" Height="49" Click="btnPrintReport_Click"/>
+    </Grid>
+</Window>
