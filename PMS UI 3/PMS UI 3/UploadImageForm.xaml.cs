@@ -34,6 +34,7 @@ namespace PMS_UI_3
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
+            int a = 2;
             
             OpenFileDialog of = new OpenFileDialog();
             of.Title = "Select Image";
