@@ -283,9 +283,11 @@ namespace PMS_UI_3 {
             
             private global::System.Data.DataColumn columnName;
             
-            private global::System.Data.DataColumn columnAge;
+            private global::System.Data.DataColumn columnQty;
             
-            private global::System.Data.DataColumn columnSalary;
+            private global::System.Data.DataColumn columnRate;
+            
+            private global::System.Data.DataColumn columnTotal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -338,17 +340,25 @@ namespace PMS_UI_3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AgeColumn {
+            public global::System.Data.DataColumn QtyColumn {
                 get {
-                    return this.columnAge;
+                    return this.columnQty;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SalaryColumn {
+            public global::System.Data.DataColumn RateColumn {
                 get {
-                    return this.columnSalary;
+                    return this.columnRate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotalColumn {
+                get {
+                    return this.columnTotal;
                 }
             }
             
@@ -389,13 +399,14 @@ namespace PMS_UI_3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DTSampleRow AddDTSampleRow(int ID, string Name, int Age, decimal Salary) {
+            public DTSampleRow AddDTSampleRow(int ID, string Name, int Qty, decimal Rate, decimal Total) {
                 DTSampleRow rowDTSampleRow = ((DTSampleRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         Name,
-                        Age,
-                        Salary};
+                        Qty,
+                        Rate,
+                        Total};
                 rowDTSampleRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTSampleRow);
                 return rowDTSampleRow;
@@ -420,8 +431,9 @@ namespace PMS_UI_3 {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnName = base.Columns["Name"];
-                this.columnAge = base.Columns["Age"];
-                this.columnSalary = base.Columns["Salary"];
+                this.columnQty = base.Columns["Qty"];
+                this.columnRate = base.Columns["Rate"];
+                this.columnTotal = base.Columns["Total"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -431,10 +443,12 @@ namespace PMS_UI_3 {
                 base.Columns.Add(this.columnID);
                 this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName);
-                this.columnAge = new global::System.Data.DataColumn("Age", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAge);
-                this.columnSalary = new global::System.Data.DataColumn("Salary", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSalary);
+                this.columnQty = new global::System.Data.DataColumn("Qty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQty);
+                this.columnRate = new global::System.Data.DataColumn("Rate", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate);
+                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotal);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -609,33 +623,49 @@ namespace PMS_UI_3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Age {
+            public int Qty {
                 get {
                     try {
-                        return ((int)(this[this.tableDTSample.AgeColumn]));
+                        return ((int)(this[this.tableDTSample.QtyColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Age\' in table \'DTSample\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Qty\' in table \'DTSample\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTSample.AgeColumn] = value;
+                    this[this.tableDTSample.QtyColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal Salary {
+            public decimal Rate {
                 get {
                     try {
-                        return ((decimal)(this[this.tableDTSample.SalaryColumn]));
+                        return ((decimal)(this[this.tableDTSample.RateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Salary\' in table \'DTSample\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate\' in table \'DTSample\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTSample.SalaryColumn] = value;
+                    this[this.tableDTSample.RateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Total {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableDTSample.TotalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Total\' in table \'DTSample\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDTSample.TotalColumn] = value;
                 }
             }
             
@@ -665,26 +695,38 @@ namespace PMS_UI_3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsAgeNull() {
-                return this.IsNull(this.tableDTSample.AgeColumn);
+            public bool IsQtyNull() {
+                return this.IsNull(this.tableDTSample.QtyColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetAgeNull() {
-                this[this.tableDTSample.AgeColumn] = global::System.Convert.DBNull;
+            public void SetQtyNull() {
+                this[this.tableDTSample.QtyColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSalaryNull() {
-                return this.IsNull(this.tableDTSample.SalaryColumn);
+            public bool IsRateNull() {
+                return this.IsNull(this.tableDTSample.RateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSalaryNull() {
-                this[this.tableDTSample.SalaryColumn] = global::System.Convert.DBNull;
+            public void SetRateNull() {
+                this[this.tableDTSample.RateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotalNull() {
+                return this.IsNull(this.tableDTSample.TotalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotalNull() {
+                this[this.tableDTSample.TotalColumn] = global::System.Convert.DBNull;
             }
         }
         

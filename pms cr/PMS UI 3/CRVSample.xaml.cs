@@ -32,22 +32,25 @@ namespace PMS_UI_3
             DataTable dt = new DataTable();
             dt.Columns.Add("Id",typeof(Int32));
             dt.Columns.Add("Name", typeof(string));
-            dt.Columns.Add("Age", typeof(Int32));
-            dt.Columns.Add("Salary", typeof(decimal));
+            dt.Columns.Add("Qty", typeof(Int32));
+            dt.Columns.Add("Rate", typeof(decimal));
+            dt.Columns.Add("Total", typeof(decimal));
 
             for (int i = 0; i < 200; i++)
             {
                 int id = 1;
-                string name = "Rana Abbas jhghgjhgjhghjghjghjghjghjghjghjgjhgjhg";
-                int age = 22;
-                decimal sal = 2000;
+                string name = "lahore madical store 10 Tab 10/5";
+                int qty = 10;
+                float rate =float.Parse( 102.25.ToString());
+                float tot =float.Parse( 1022.5.ToString());
 
-                dt.Rows.Add(id,name,age,sal);
+                dt.Rows.Add(id,name,qty,rate,tot);
             }
 
             SampleReport sr = new SampleReport();
             sr.Database.Tables["DTSample"].SetDataSource(dt);
 
+            sampleCRV.ViewerCore.ReportSource = null;
             sampleCRV.ViewerCore.ReportSource = sr;
         }
     }
