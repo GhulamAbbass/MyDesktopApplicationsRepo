@@ -34,8 +34,8 @@ namespace PMS_UI_3
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            
+
+            int a = 5;
             OpenFileDialog of = new OpenFileDialog();
             of.Title = "Select Image";
             of.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
